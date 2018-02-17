@@ -17,7 +17,7 @@ pip install numpy scipy scikit-learn scikit-image request
 ```
 
 ### Training a network
-Training the network ``python train.py``:
+Use the command ``python train.py``:
 ```shell
 usage: train.py [-h] [--test-ratio ratio] [--valid-ratio ratio] [-bs size]
                 [-ep nb] [-lr rate] [-rs state] [--balanced] [--cuda] [-v]
@@ -38,6 +38,26 @@ optional arguments:
   -lr rate, --learning-rate rate    SGD learning rate (default: 0.001)
   -rs state, --random-state state   random state of train/valid/test split (default: 42)
   --balanced                        trying to balance data or not (default: False)
+  --cuda                            use GPU or not (default: False)
+  -v, --verbose                     print information (default: False)
+```
+
+### Test the network
+Use the command ``python test.py``:
+```shell
+usage: test.py [-h] [--virtual] [--url URL] [--port PORT] [--xp XP] data
+
+Testing the qualityNet
+
+positional arguments:
+  data                              path of data
+
+optional arguments:
+  -h, --help                        show this help message and exit
+  --virtual                         using virtual net (default: False)
+  --url URL                         url if using virtual net (default: 0.0.0.0)
+  --port PORT                       port if using virtual net (default: 5000)
+  --xp XP                           xp path if not using virtual net (default: .)
   --cuda                            use GPU or not (default: False)
   -v, --verbose                     print information (default: False)
 ```
