@@ -22,20 +22,21 @@ torch.backends.cudnn.enabled = True
 
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser(description='Training the qualityNet')
+    parser = argparse.ArgumentParser(description='Training the qualityNet',
+                                     formatter_class=argparse.ArgumentDefaultsHelpFormatter)
 
     parser.add_argument('--test-ratio', help='ratio of the data for testing', type=float, 
-                        default=0.1)
+                        default=0.1, metavar="ratio")
     parser.add_argument('--valid-ratio', help='ratio of the data for validation', type=float, 
-                        default=0.1)
+                        default=0.1, metavar="ratio")
     parser.add_argument('-bs', '--batch-size', type=int, help='SGD batch size',
-                        default=16)
+                        default=16, metavar="size")
     parser.add_argument('-ep', '--nb-epochs', type=int, help='SGD number of epochs',
-                        default=5)
+                        default=5, metavar="nb")
     parser.add_argument('-lr', '--learning-rate', type=float, help='SGD learning rate', 
-                        default=0.001)
+                        default=0.001, metavar="rate")
     parser.add_argument('-rs', '--random-state', type=int, help='random state of train/valid/test split',
-                        default=42)
+                        default=42, metavar="state")
     parser.add_argument('--balanced', help='trying to balance data or not',
                         action='store_true', default=False)
     parser.add_argument('--cuda', help='use GPU or not', action="store_true",
