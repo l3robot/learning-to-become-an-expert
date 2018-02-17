@@ -72,4 +72,4 @@ Use the script ``python server.py xp``, where ``xp`` is the path of the net expe
 
 ### Question?
 
-Feel free to send me an email to louis-emile.robitaille.1@ulaval.ca
+Feel free to send me an email @ louis-emile.robitaille.1@ulaval.ca
