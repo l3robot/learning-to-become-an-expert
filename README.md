@@ -1,6 +1,10 @@
 # QualityNet
 ### Learning to Become an Expert: Deep Networks Applied To Super-Resolution Microscopy
 
+> [Louis-Émile Robitaille](http://vision.gel.ulaval.ca/fr/People/Id_979/index.php), [Audrey Durand](vision.gel.ulaval.ca/fr/People/Id_640/index.php), [Marc-André Gardner](http://vision.gel.ulaval.ca/fr/People/Id_660/index.php), [Christian Gagné](http://vision.gel.ulaval.ca/fr/People/Id_8/index.php), Paul De Koninck and Flavie Lavoie-Cardinal, “[Learning to Become an Expert: Deep Networks Applied To Super-Resolution Microscopy](http://vision.gel.ulaval.ca/fr/publications/Id_1197/PublDetails.php)”,
+> in Innovative Applications of Artificial Intelligence (IAAI-18)
+>
+
 #### source code
 
 ---
@@ -65,3 +69,7 @@ optional arguments:
 
 ### Starting a network server
 Use the script ``python server.py xp``, where ``xp`` is the path of the net experiment folder.  
+
+### Question?
+
+Feel free to send me an email to louis-emile.robitaille.1@ulaval.ca
