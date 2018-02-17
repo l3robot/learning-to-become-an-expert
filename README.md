@@ -17,7 +17,7 @@ pip install numpy scipy scikit-learn scikit-image request
 ```
 
 ### Training a network
-Use the command ``python train.py``:
+Use the script ``python train.py``:
 ```shell
 usage: train.py [-h] [--test-ratio ratio] [--valid-ratio ratio] [-bs size]
                 [-ep nb] [-lr rate] [-rs state] [--balanced] [--cuda] [-v]
@@ -43,7 +43,7 @@ optional arguments:
 ```
 
 ### Test the network
-Use the command ``python test.py``:
+Use the script ``python test.py``:
 ```shell
 usage: test.py [-h] [--virtual] [--url URL] [--port PORT] [--xp XP] [--cuda]
                [-v] data
@@ -62,3 +62,6 @@ optional arguments:
   --cuda                            use GPU or not (default: False)
   -v, --verbose                     print information (default: False)
 ```
+
+### Starting a network server
+Use the script ``python server.py xp``, where ``xp`` is the path of the net experiment folder.  
