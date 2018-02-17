@@ -45,7 +45,8 @@ optional arguments:
 ### Test the network
 Use the command ``python test.py``:
 ```shell
-usage: test.py [-h] [--virtual] [--url URL] [--port PORT] [--xp XP] data
+usage: test.py [-h] [--virtual] [--url URL] [--port PORT] [--xp XP] [--cuda]
+               [-v] data
 
 Testing the qualityNet
 
