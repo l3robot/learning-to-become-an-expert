@@ -87,9 +87,6 @@ if __name__ == '__main__':
     mean, std = np.mean(train_data), np.std(train_data)
     config['mean'], config['std'] = float(mean), float(std)
     train_data = normalize_data(train_data, mean, std)
-    if args.balanced:
-        train_data, train_targets = balance_dataset(train_data, train_targets, 
-                                                    args.verbose)
     valid_data = normalize_data(valid_data, mean, std)
     if test is not None:
         test_data = normalize_data(test_data, mean, std)
